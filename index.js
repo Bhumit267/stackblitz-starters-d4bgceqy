@@ -11,9 +11,9 @@ app.use(express.static('static'));
 app.get('/', (req, res) => {
   // Conditionally send different responses based on IS_ADMIN variable
   if (process.env.IS_ADMIN === 'true') {
-    res.send({ message: "Welcome, bhumit", data: ["Male", "19"] });
+    res.send({ message: "Welcome, Bhumit", data: ["Male", "19"] });
   } else {
-    res.send({ message: "Welcome, Uday", data: ["Female", "19"] });
+    res.send({ message: "Welcome, Bhumigya", data: ["male", "19"] });
   }
 });
 
